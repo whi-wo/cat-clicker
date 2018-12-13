@@ -1,0 +1,11 @@
+//app. js file
+
+const elem = document.getElementById('cat');
+elem.addEventListener('click', function(){
+  //count the number of clicks and increase the number each timeout
+  const i;
+for (i = 0; i; i++) {
+  text = i;
+}
+document.getElementById("clicks").innerHTML = text;
+}, false);
