@@ -2,15 +2,16 @@
 
 const elem = document.getElementById('cat');
 const counter = document.getElementById('clicks');
+let clicks = 0
 //selects the cat picture and stores it into a variable, 'cat'
 
-elem.addEventListener('click', function(){
-  console.log("yee");
-  var i;
-  for (i = 0; i; i++) {
-  var text = i;
-  console.log(text);
+document.getElementById("cat").addEventListener("click", increaseClicker);
 
-document.getElementById("clicks").innerHTML = text;
+
+function increaseClicker() {
+  for (i = 0; i < 1; i++) {
+   clicks++;
 }
-}, false);
+  counter.innerHTML = clicks;
+  console.log(counter.innerHTML);
+};
